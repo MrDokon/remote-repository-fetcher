@@ -1,5 +1,6 @@
 package pl.damian.repositoryfetcher.service;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import pl.damian.repositoryfetcher.client.GithubClient;
 import pl.damian.repositoryfetcher.controller.dto.RepositoryBranch;
@@ -14,6 +15,7 @@ public class GithubService implements VersionControlService {
         this.githubClient = githubClient;
     }
 
+    @Cacheable(cacheNames = "UserRepositoriesWithBranches")
     public Flux<RepositoryBranch> getUserRepositoriesWithBranches(String username, boolean includeForks) {
         return githubClient
                 .getUserRepositories(username)
