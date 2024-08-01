@@ -55,6 +55,7 @@ $ curl http://localhost:8080/repositories/MrDokon
 		}
 	]
     }
+...
 ]
 ```
 > **Note**
