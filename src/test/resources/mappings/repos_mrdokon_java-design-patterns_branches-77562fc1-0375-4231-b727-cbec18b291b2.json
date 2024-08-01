@@ -1,0 +1,42 @@
+{
+  "id" : "77562fc1-0375-4231-b727-cbec18b291b2",
+  "name" : "repos_mrdokon_java-design-patterns_branches",
+  "request" : {
+    "url" : "/repos/MrDokon/java-design-patterns/branches",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[{\"name\":\"master\",\"commit\":{\"sha\":\"186b28f262aa0f3f2ed96fceef62e2524bc8e4a1\",\"url\":\"https://api.github.com/repos/MrDokon/java-design-patterns/commits/186b28f262aa0f3f2ed96fceef62e2524bc8e4a1\"},\"protected\":false,\"protection\":{\"enabled\":false,\"required_status_checks\":{\"enforcement_level\":\"off\",\"contexts\":[],\"checks\":[]}},\"protection_url\":\"https://api.github.com/repos/MrDokon/java-design-patterns/branches/master/protection\"}]",
+    "headers" : {
+      "X-Accepted-OAuth-Scopes" : "",
+      "Server" : "github.com",
+      "X-RateLimit-Resource" : "core",
+      "Access-Control-Allow-Origin" : "*",
+      "X-RateLimit-Used" : "21",
+      "x-github-api-version-selected" : "2022-11-28",
+      "Referrer-Policy" : "origin-when-cross-origin, strict-origin-when-cross-origin",
+      "X-Frame-Options" : "deny",
+      "Strict-Transport-Security" : "max-age=31536000; includeSubdomains; preload",
+      "Access-Control-Expose-Headers" : "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
+      "X-RateLimit-Remaining" : "4979",
+      "X-GitHub-Media-Type" : "github.v3; format=json",
+      "Content-Security-Policy" : "default-src 'none'",
+      "X-XSS-Protection" : "0",
+      "X-GitHub-Request-Id" : "C9D0:9E89:BDBF8B:C01445:66AAB160",
+      "Content-Type" : "application/json; charset=utf-8",
+      "X-Content-Type-Options" : "nosniff",
+      "X-RateLimit-Reset" : "1722465521",
+      "Date" : "Wed, 31 Jul 2024 21:49:21 GMT",
+      "Cache-Control" : "private, max-age=60, s-maxage=60",
+      "ETag" : "W/\"fd5090342299b0fd75ae0cd0c7456d6beb9921085e386034e27fef019927adc4\"",
+      "Vary" : "Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With",
+      "X-RateLimit-Limit" : "5000",
+      "X-OAuth-Scopes" : "repo",
+      "github-authentication-token-expiration" : "2024-08-07 15:15:30 UTC"
+    }
+  },
+  "uuid" : "77562fc1-0375-4231-b727-cbec18b291b2",
+  "persistent" : true,
+  "insertionIndex" : 6
+}

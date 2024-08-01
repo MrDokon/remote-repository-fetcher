@@ -1,0 +1,42 @@
+{
+  "id" : "29ce7366-ef12-4e21-971e-ac615d7c0c6e",
+  "name" : "repos_mrdokon_cars-app_branches",
+  "request" : {
+    "url" : "/repos/MrDokon/cars-app/branches",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[{\"name\":\"main\",\"commit\":{\"sha\":\"4a68f41e5df26de1c0d9dddecc91036b0c50e328\",\"url\":\"https://api.github.com/repos/MrDokon/cars-app/commits/4a68f41e5df26de1c0d9dddecc91036b0c50e328\"},\"protected\":false,\"protection\":{\"enabled\":false,\"required_status_checks\":{\"enforcement_level\":\"off\",\"contexts\":[],\"checks\":[]}},\"protection_url\":\"https://api.github.com/repos/MrDokon/cars-app/branches/main/protection\"},{\"name\":\"new-mock-branch\",\"commit\":{\"sha\":\"36bbb2990a2fc016fcb877886ce91de27a761a34\",\"url\":\"https://api.github.com/repos/MrDokon/cars-app/commits/36bbb2990a2fc016fcb877886ce91de27a761a34\"},\"protected\":false,\"protection\":{\"enabled\":false,\"required_status_checks\":{\"enforcement_level\":\"off\",\"contexts\":[],\"checks\":[]}},\"protection_url\":\"https://api.github.com/repos/MrDokon/cars-app/branches/new-mock-branch/protection\"}]",
+    "headers" : {
+      "X-Accepted-OAuth-Scopes" : "",
+      "Server" : "github.com",
+      "X-RateLimit-Resource" : "core",
+      "Access-Control-Allow-Origin" : "*",
+      "X-RateLimit-Used" : "20",
+      "x-github-api-version-selected" : "2022-11-28",
+      "Referrer-Policy" : "origin-when-cross-origin, strict-origin-when-cross-origin",
+      "X-Frame-Options" : "deny",
+      "Strict-Transport-Security" : "max-age=31536000; includeSubdomains; preload",
+      "Access-Control-Expose-Headers" : "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
+      "X-RateLimit-Remaining" : "4980",
+      "X-GitHub-Media-Type" : "github.v3; format=json",
+      "Content-Security-Policy" : "default-src 'none'",
+      "X-XSS-Protection" : "0",
+      "X-GitHub-Request-Id" : "C9CE:7B6F7:F0EACC:F39ACC:66AAB160",
+      "Content-Type" : "application/json; charset=utf-8",
+      "X-Content-Type-Options" : "nosniff",
+      "X-RateLimit-Reset" : "1722465521",
+      "Date" : "Wed, 31 Jul 2024 21:49:21 GMT",
+      "Cache-Control" : "private, max-age=60, s-maxage=60",
+      "ETag" : "W/\"75f236e86b3c052890bea5e34ff7b334d7204f4fbc3df78ef905ed9bba3a6132\"",
+      "Vary" : "Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With",
+      "X-RateLimit-Limit" : "5000",
+      "X-OAuth-Scopes" : "repo",
+      "github-authentication-token-expiration" : "2024-08-07 15:15:30 UTC"
+    }
+  },
+  "uuid" : "29ce7366-ef12-4e21-971e-ac615d7c0c6e",
+  "persistent" : true,
+  "insertionIndex" : 5
+}
