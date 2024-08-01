@@ -61,5 +61,5 @@ class AppControllerIntegrationTest {
                 .expectBody()
                 .json("{\"status\":404,\"message\":\"Not Found - The specified user probably does not exist.\"}");
     }
-    // TODO to consider - connection & response timeout tests
+    
 }
