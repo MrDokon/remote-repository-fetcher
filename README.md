@@ -28,7 +28,9 @@ $ ./gradlew bootRun
 
 ### Fetching Github Data
 
-Application allows to list all github repositories of given user, which are not forks (by default).
+Application allows to list all github repositories of given user,  
+which are not forks (by default).  
+
 Application endpoint: /repositories/{username}
 
 ```bash
@@ -37,22 +39,22 @@ $ curl http://localhost:8080/repositories/MrDokon
 
 # Response
 [
-	{
-		"repository": {
-			"name": "cars-app",
-			"ownerLogin": "MrDokon"
+    {
+	"repository": {
+		"name": "cars-app",
+		"ownerLogin": "MrDokon"
+	},
+	"branches": [
+		{
+			"name": "main",
+			"lastCommitSha": "4a68f41e5df26de1c0d9dddecc91036b0c50e328"
 		},
-		"branches": [
-			{
-				"name": "main",
-				"lastCommitSha": "4a68f41e5df26de1c0d9dddecc91036b0c50e328"
-			},
-			{
-				"name": "new-mock-branch",
-				"lastCommitSha": "36bbb2990a2fc016fcb877886ce91de27a761a34"
-			}
-		]
-	}
+		{
+			"name": "new-mock-branch",
+			"lastCommitSha": "36bbb2990a2fc016fcb877886ce91de27a761a34"
+		}
+	]
+    }
 ]
 ```
 > **Note**
@@ -67,6 +69,6 @@ $ curl http://localhost:8080/repositories/MrDokon
 
 ### Limitations
 
-Number of GitHub requests is limited. 
+Number of GitHub requests is limited.  
 See [Rate limits for the REST API](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api)
 
