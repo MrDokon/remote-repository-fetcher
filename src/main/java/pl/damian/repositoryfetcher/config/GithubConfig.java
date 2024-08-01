@@ -1,0 +1,26 @@
+package pl.damian.repositoryfetcher.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.reactive.function.client.WebClient;
+
+@Configuration
+public class GithubConfig {
+
+    @Value("${github.url}")
+    private String url;
+
+    @Bean
+    public WebClient webClient() {
+        return WebClient.create(url);
+    }
+
+    @Bean
+    public CacheManager cacheManager() {
+        return new ConcurrentMapCacheManager("UserRepositoriesWithBranches");
+    }
+
+}
