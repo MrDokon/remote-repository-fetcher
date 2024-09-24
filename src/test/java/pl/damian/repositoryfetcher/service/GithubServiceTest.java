@@ -5,10 +5,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import pl.damian.repositoryfetcher.client.GithubClient;
+import pl.damian.repositoryfetcher.infrastructure.github.GithubClient;
 import pl.damian.repositoryfetcher.controller.dto.RepositoryBranch;
-import pl.damian.repositoryfetcher.model.Branch;
-import pl.damian.repositoryfetcher.model.Repository;
+import pl.damian.repositoryfetcher.domain.model.Branch;
+import pl.damian.repositoryfetcher.domain.model.Repository;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 

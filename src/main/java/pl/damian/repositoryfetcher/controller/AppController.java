@@ -5,7 +5,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import pl.damian.repositoryfetcher.controller.dto.RepositoryBranch;
-import pl.damian.repositoryfetcher.service.VersionControlService;
+import pl.damian.repositoryfetcher.domain.VersionControlProvider;
+import pl.damian.repositoryfetcher.domain.VersionControlService;
 import reactor.core.publisher.Flux;
 
 @RestController

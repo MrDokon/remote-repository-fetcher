@@ -1,7 +1,7 @@
-package pl.damian.repositoryfetcher.model;
+package pl.damian.repositoryfetcher.domain.model;
 
-import pl.damian.repositoryfetcher.client.response.GithubBranch;
-import pl.damian.repositoryfetcher.client.response.GithubRepository;
+import pl.damian.repositoryfetcher.infrastructure.github.response.GithubBranch;
+import pl.damian.repositoryfetcher.infrastructure.github.response.GithubRepository;
 
 public class RemoteRepositoryModelMapper {
 

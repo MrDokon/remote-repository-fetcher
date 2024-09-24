@@ -1,21 +1,22 @@
-package pl.damian.repositoryfetcher.client;
+package pl.damian.repositoryfetcher.infrastructure.github;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
-import pl.damian.repositoryfetcher.client.response.GithubBranch;
-import pl.damian.repositoryfetcher.client.response.GithubRepository;
+import pl.damian.repositoryfetcher.infrastructure.github.response.GithubBranch;
+import pl.damian.repositoryfetcher.infrastructure.github.response.GithubRepository;
 import pl.damian.repositoryfetcher.controller.exceptions.GithubNotFoundException;
-import pl.damian.repositoryfetcher.model.Branch;
-import pl.damian.repositoryfetcher.model.RemoteRepositoryModelMapper;
-import pl.damian.repositoryfetcher.model.Repository;
+import pl.damian.repositoryfetcher.domain.VersionControlProvider;
+import pl.damian.repositoryfetcher.domain.model.Branch;
+import pl.damian.repositoryfetcher.domain.model.RemoteRepositoryModelMapper;
+import pl.damian.repositoryfetcher.domain.model.Repository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Component
-public class GithubClient {
+public class GithubClient implements VersionControlProvider {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GithubClient.class);
     private final WebClient webClient;

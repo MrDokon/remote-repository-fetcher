@@ -1,4 +1,4 @@
-package pl.damian.repositoryfetcher.config;
+package pl.damian.repositoryfetcher.infrastructure.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.CacheManager;
